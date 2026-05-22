@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "pillow>=12.2.0",
-    "rembg>=2.0.75",
+    "rembg[cpu]>=2.0.75",
 ]
