@@ -15,3 +15,24 @@ dependencies = [
 dev = [
     "ruff>=0.16.5",
 ]
+
+[tool.ruff.lint]
+select = [
+    "E4",  # import related pycodestyle
+    "E7",  # suspicious syntax
+    "E9",  # SyntaxError etc.
+    "F",   # Pyflakes
+    "I",   # import organization
+    "UP",  # update old Python code to new style
+    "B",   # common bugs and dangerous code
+    "SIM", # simplify unnecessarily complex code
+    "C4",  # improve list/dict/set comprehension
+    "RUF", # useful checks specific to Ruff
+]
+ignore = [
+    "E501",   # line length is left to the formatter
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
